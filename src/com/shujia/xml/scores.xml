@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scores>
+	<score id="1">
+		<name>王同</name>
+		<cource>java</cource>
+		<s>89</s>
+	</score>
+
+	<score id="2">
+		<name>李佳</name>
+		<cource>sql</cource>
+		<s>59</s>
+	</score>
+
+</scores>
