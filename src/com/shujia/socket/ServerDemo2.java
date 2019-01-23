@@ -23,8 +23,7 @@ public class ServerDemo2 {
          *
          */
         TaskThread taskThread = (TaskThread) objectInputStream.readObject();
-        taskThread.start();
-
+        new Thread(taskThread).start();
         accept.shutdownInput();
 
 
