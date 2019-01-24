@@ -22,9 +22,9 @@ public class ClientDemo2 {
         //节点流---->处理流
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
 
-        /* Student student = new Student("123456", "张三", "25", "男", "一班");
+        /* Student Student = new Student("123456", "张三", "25", "男", "一班");
 
-        objectOutputStream.writeObject(student);*/
+        objectOutputStream.writeObject(Student);*/
 
         TaskThread taskThread = new TaskThread();
 

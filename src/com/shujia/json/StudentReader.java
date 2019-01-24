@@ -32,7 +32,7 @@ public class StudentReader {
         }
 
 
-        FileWriter fileWriter = new FileWriter("java/data/student.json");
+        FileWriter fileWriter = new FileWriter("java/data/Student.json");
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
         Gson gson = new Gson();
