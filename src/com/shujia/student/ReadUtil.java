@@ -43,13 +43,14 @@ public class ReadUtil {
                  *s数据里面的字段顺序必须和类里面属性的顺序一样
                  *
                  */
-
                 String str = strs[i];
-                //当方法参数时Integer时，将数据转成Integer
-                if (type.getName().equals("java.lang.Integer")){
-                    method.invoke(t, Integer.parseInt(str));
-                }else {
+                if (type.getName().equals("java.lang.String")){
                     method.invoke(t,str);
+                }else {
+                    Method valueOf = type.getMethod("valueOf", String.class);
+                    //多态，父类引用执行之类对象
+                    Object value = valueOf.invoke(type, str);
+                    method.invoke(t,value);
                 }
             }
             strings.add(t);

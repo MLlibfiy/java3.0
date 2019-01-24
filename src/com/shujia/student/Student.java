@@ -8,17 +8,6 @@ public class Student  {
     private String gender;
     private String clazz;
 
-    public Student() {
-    }
-
-    public Student(String id, String name, Integer age, String gender, String clazz) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.clazz = clazz;
-    }
-
     public String getId() {
         return id;
     }
@@ -56,6 +45,17 @@ public class Student  {
     }
 
     public void setClazz(String clazz) {
+        this.clazz = clazz;
+    }
+
+    public Student() {
+    }
+
+    public Student(String id, String name, Integer age, String gender, String clazz) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
         this.clazz = clazz;
     }
 

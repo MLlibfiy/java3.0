@@ -1,16 +1,16 @@
 package com.shujia.student;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 public class Demo2 {
     public static void main(String[] args) throws Exception {
 
-        ArrayList<Score> read = ReadUtil.read("java/data/score.txt", Score.class);
+        ArrayList<Student> read = ReadUtil.read("java/data/students.txt", Student.class);
 
-        for (Score score : read) {
+        for (Student score : read) {
             System.out.println(score);
         }
-
 
     }
 }
