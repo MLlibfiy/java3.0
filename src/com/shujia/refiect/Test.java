@@ -1,3 +1,4 @@
+package com.shujia.refiect;
 
 public class Test {
 
@@ -9,7 +10,7 @@ public class Test {
      * @param args
      */
     public static void main(String[] args) throws ClassNotFoundException {
-        if ("Student".equals(args[0])){
+        if ("com.shujia.refiect.Student".equals(args[0])){
             Student student = new Student();
         }else if("persion".equals(args[0])){
             Persion persion = new Persion();
@@ -31,11 +32,17 @@ public class Test {
          * 同一个类的类对象不管用什么方式获取都是同一个对象
          *
          */
-        Class c =  Class.forName("Student");
 
         /**
-         *  new Student();   创建一个类的对象
-         *  Student.class;   获取类的类对象
+         * 反射： 在运行时加载和检查.class文件
+         *
+         */
+
+        Class c =  Class.forName("com.shujia.refiect.Student");
+
+        /**
+         *  new com.shujia.refiect.Student();   创建一个类的对象
+         *  com.shujia.refiect.Student.class;   获取类的类对象
          *
          */
 

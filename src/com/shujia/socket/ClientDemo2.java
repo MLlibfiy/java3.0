@@ -22,9 +22,9 @@ public class ClientDemo2 {
         //节点流---->处理流
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
 
-        /* Student Student = new Student("123456", "张三", "25", "男", "一班");
+        /* com.shujia.refiect.Student com.shujia.refiect.Student = new com.shujia.refiect.Student("123456", "张三", "25", "男", "一班");
 
-        objectOutputStream.writeObject(Student);*/
+        objectOutputStream.writeObject(com.shujia.refiect.Student);*/
 
         TaskThread taskThread = new TaskThread();
 

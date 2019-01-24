@@ -15,7 +15,7 @@ public class ServerDemo2 {
 
         ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
 
-       /* Student s = (Student)objectInputStream.readObject();
+       /* com.shujia.refiect.Student s = (com.shujia.refiect.Student)objectInputStream.readObject();
         System.out.println(s);*/
 
         /**
